@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.css">
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="styles/global.css">
-  <link rel="stylesheet" href="styles/reset.css">
-  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/main.min.css">
   <title>Arthur's Resume</title>
 </head>
 
@@ -22,9 +23,8 @@
     <div class="info">
       <a class="link"
         href="https://www.google.com.br/maps/place/Recife+-+State+of+Pernambuco/@-8.0418098,-35.0779384,11z/data=!3m1!4b1!4m5!3m4!1s0x7ab196f88c446e5:0x3c9ef52922447fd4!8m2!3d-8.0577401!4d-34.8829629"
-        target="_blank" rel="external"
-      >
-      <i class="far fa-compass"></i> Recife, PE
+        target="_blank" rel="external">
+        <i class="far fa-compass"></i> Recife, PE
       </a>
 
       <a class="link" href="https://github.com/ArthurVBS" target="_blank" rel="external">
@@ -40,36 +40,55 @@
       </a>
     </div>
   </header>
+
+  <div class="lang-toggle">
+    <span class="en">English</span>
+    <input type="checkbox" id="toggle" class="toggle">
+    <span class="pt">Português</span>
+  </div>
+
   <main>
+
     <section class="section about">
-      <h2 class="title">About</h2>
-      <p>...</p>
+      <h2 class="title lang-en">About</h2>
+      <h2 class="title lang-pt">Sobre</h2>
+      <p class="lang-en">English...</p>
+      <p class="lang-pt">Português...</p>
     </section>
 
     <section class="section academy">
-      <h2 class="title">Academy</h2>
-      <p>...</p>
+      <h2 class="title lang-en">Academy</h2>
+      <h2 class="title lang-pt">Formação</h2>
+      <p class="lang-en">English...</p>
+      <p class="lang-pt">Português...</p>
     </section>
 
     <section class="section skills">
-      <h2 class="title">Skills</h2>
-      <p>...</p>
+      <h2 class="title lang-en">Skills</h2>
+      <h2 class="title lang-pt">Habilidades</h2>
+      <p class="lang-en">English...</p>
+      <p class="lang-pt">Português...</p>
     </section>
 
-    <section id="repositories" class="section repositories">
-      <h2 class="title">Repositories</h2>
-      <!-- API Pinned Repo -->
+    <section class="section repositories">
+      <h2 class="title lang-en">Repositories</h2>
+      <h2 class="title lang-pt">Repositórios</h2>
+      <p class="lang-en">English...</p>
+      <p class="lang-pt">Português...</p>
     </section>
 
     <section class="section languages">
-      <h2 class="title">Languages</h2>
-      <p>...</p>
+      <h2 class="title lang-en">Languages</h2>
+      <h2 class="title lang-pt">Idiomas</h2>
+      <p class="lang-en">English...</p>
+      <p class="lang-pt">Português...</p>
     </section>
   </main>
   <footer>
     <a class="email-link" href="mailto:arthurvini2703@gmail.com">arthurvini2703@gmail.com</a>
   </footer>
-  <script src="scripts/connectionPinnedRepo.js"></script>
+
+  <script src="scripts/toggle.js"></script>
 </body>
 
 </html>

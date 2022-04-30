@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+
+  .email-link {
+    color: #444;
+    letter-spacing: 1px;
+  }
+}
