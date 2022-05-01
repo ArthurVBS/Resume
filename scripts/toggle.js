@@ -9,13 +9,13 @@ const hidePortugueseContent = () => {
   })
 
   contentEnglish.forEach((e) => {
-    e.style.display = 'initial'
+    e.style.display = 'flex'
   })
 }
 
 const hideEnglishContent = () => {
   contentPortuguese.forEach((e) => {
-    e.style.display = 'initial'
+    e.style.display = 'flex'
   })
 
   contentEnglish.forEach((e) => {

@@ -2,38 +2,213 @@
 
 main {
   max-width: 1024px;
+  padding-bottom: 16px;
   margin: 0 auto;
 
   .section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 16px;
+    gap: 32px;
     padding: 16px;
 
     .title {
       background-color: $secondary-color;
       color: $primary-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
       font-size: 1.8em;
       text-align: center;
       border-radius: 8px;
       padding: 4px;
+
+      i {
+        font-size: .9em;
+      }
     }
   }
 
-  .section.repositories .repo {
-    color: $primary-color;
+  .section.about .content {
+    flex-direction: column;
+    gap: 16px;
+    padding: 8px;
+
+    .paragraphs {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+
+      p {
+        font-size: 1.2em;
+        text-align: justify;
+        text-indent: 1em;
+      }
+    }
+
+    .gif {
+      width: 100%;
+      height: 200px;
+      border-radius: 8px;
+
+      background: url(https://camo.githubusercontent.com/badcc819734aa1adbb9fbca7d9ddee8edf2d0b1654e62e67fbd1ad141203365c/68747470733a2f2f6d65646961342e67697068792e636f6d2f6d656469612f7167515567674143335066763638377150432f67697068792e676966);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .section.academy .content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 8px;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      .university {
+        text-align: center;
+        font-size: 1.5em;
+      }
+
+      .course {
+        text-align: center;
+        text-indent: 1em
+      }
+    }
+
+    .right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+
+      .duration {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .section.skills .content {
+    flex-direction: column;
+    padding: 8px;
     gap: 16px;
 
-    .link {
-      color: $primary-color;
-      letter-spacing: 1px;
-      font-weight: 600;
-      font-size: 1.2em;
+    .skill {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-grow: 1;
+      gap: 16px;
+
+      .balls-skill {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        .ball {
+          width: 1em;
+          height: 1em;
+          border-radius: 50%;
+          background-color: $secondary-color;
+        }
+
+        .ball.colored {
+          background-color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .section.repositories .content {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 8px;
+
+    .repo {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      flex-grow: 1;
+      gap: 8px;
+
+      .link {
+        color: $primary-color;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 8px;
+
+        i {
+          font-size: .9em;
+        }
+      }
+
+      .description {
+        text-align: justify;
+        text-indent: 1em;
+      }
+    }
+  }
+
+  .section.languages .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 8px;
+
+    h3 {
+      border: 2px solid $primary-color;
+      border-radius: 8px;
+      text-align: center;
+      flex-grow: 1;
+      padding: 8px 16px;
+    }
+  }
+}
+
+@media screen and (min-width: 678px) {
+  main {
+    .section.about .content {
+      flex-direction: row;
+    }
+
+    .section.academy .content {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .left {
+        .university {
+          text-align: start;
+        }
+      }
+    }
+
+    .section.skills .content{
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+
+      .skill{
+        width: 45%;
+      }
+    }
+
+    .section.repositories .content {
+      .repo {
+        width: 45%;
+      }
     }
   }
 }
