@@ -9,6 +9,8 @@
   &nbsp;
   <img src="https://img.shields.io/badge/CSS-000?style=social&logo=css3&logoColor=469BD2">
   &nbsp;
+  <img src="https://img.shields.io/badge/SASS-000?style=social&logo=sass&logoColor=469BD2">
+  &nbsp;
   <img src="https://img.shields.io/badge/JavaScript-000?style=social&logo=javascript&logoColor=469BD2">
 </div>
 
@@ -23,18 +25,19 @@
 
 ## 💻 Project status:
 
-- 🚧 Project in progress... 🛠️
+- 🪜 Always in progress... 🛠️
 
 ## 🛠 Technologies:
 
 - HTML
 - CSS
+- SASS/SCSS
 - JavaScript
 
 ## 📝 Features:
 
+- [X] Has a language toggle button (PT/EN).
 - [ ] Make it possible to download the resume in PDF.
-- [ ] Consume the github API
 
 ## ⚙️ Prerequisites:
 
