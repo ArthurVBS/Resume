@@ -9,6 +9,8 @@
   &nbsp;
   <img src="https://img.shields.io/badge/CSS-000?style=social&logo=css3&logoColor=469BD2">
   &nbsp;
+  <img src="https://img.shields.io/badge/SASS-000?style=social&logo=sass&logoColor=469BD2">
+  &nbsp;
   <img src="https://img.shields.io/badge/JavaScript-000?style=social&logo=javascript&logoColor=469BD2">
 </div>
 
@@ -23,18 +25,19 @@
 
 ## 💻 Situação do projeto:
 
-- 🚧 Projeto em progresso... 🛠️
+- 🪜 Sempre em progresso... 🛠️
 
 ## 🛠 Tecnologias:
 
 - HTML
 - CSS
+- SASS/SCSS
 - JavaScript
 
 ## 📝 Features:
 
+- [X] Ter um botão que alterna idiomas (PT/EN).
 - [ ] Possibilitar o download do currículo em PDF.
-- [ ] Consumir a API do GitHub.
 
 ## ⚙️ Pré-requisitos:
 
