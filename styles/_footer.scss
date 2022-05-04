@@ -2,12 +2,35 @@
 
 footer {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
+  gap: 16px;
   padding: 16px;
 
-  .email-link {
+  #email-link {
     color: #444;
+    font-weight: 600;
     letter-spacing: 1px;
+    transition: .3s all;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  #download-link {
+    background-color: $primary-color;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    padding: 8px 24px;
+    transition: .3s all;
+
+    &:hover {
+      background-color: $secondary-color;
+      color: $primary-color;
+    }
   }
 }

@@ -175,6 +175,24 @@ main {
       padding: 8px 16px;
     }
   }
+
+  .section.hobbies .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+
+    h3 {
+      letter-spacing: 2px;
+      text-align: center;
+
+      span {
+        color: $primary-color;
+        letter-spacing: 4px;
+        font-size: 1.1em;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 678px) {
@@ -195,12 +213,12 @@ main {
       }
     }
 
-    .section.skills .content{
+    .section.skills .content {
       flex-direction: row;
       flex-wrap: wrap;
       align-items: center;
 
-      .skill{
+      .skill {
         width: 45%;
       }
     }
